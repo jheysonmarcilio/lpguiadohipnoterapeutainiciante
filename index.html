@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="/lpaprendahipnosedozero/Favicon.png">
+<title>Guia do Hipnoterapeuta Iniciante | Comunidade Marcílio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+:root{--black:#050505;--white:#f7f7f7;--gray:#a7a7a7;--red:#ff3b30;--red2:#ff6258;--green:#4ade80;--max:1060px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Inter,Arial,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
+a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),calc(100% - 34px));margin:auto}
+.top{height:42px;background:#171717;border-bottom:1px solid #252525;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;letter-spacing:.5px}
+.top b{color:#ff665d}
+.hero{position:relative;text-align:center;padding:28px 0 72px;overflow:hidden;background:radial-gradient(ellipse 70% 60% at 50% 0%,#3a0c08 0%,#140605 38%,#050505 76%)}
+.hero:after{content:"";position:absolute;width:800px;height:500px;left:50%;top:-220px;transform:translateX(-50%);background:radial-gradient(circle,rgba(255,53,42,.18),transparent 67%);filter:blur(20px);pointer-events:none}
+.brand{position:relative;z-index:1;font-size:15px;font-weight:900;letter-spacing:2px;margin-bottom:25px}.brand span{color:var(--red)}
+.timer{position:relative;z-index:1;display:inline-flex;gap:8px;margin-bottom:26px}.time{min-width:65px;padding:8px 7px;border:1px solid #343434;border-radius:7px;background:#111;font-size:18px;font-weight:900}.time small{display:block;color:#777;font-size:8px;text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+.date{font-size:13px;font-weight:800;color:#ddd;margin-bottom:18px}.date span{color:#ff655c}
+h1{position:relative;z-index:1;font-size:clamp(39px,6.3vw,70px);line-height:1.01;letter-spacing:-3.7px;margin:0 auto 22px;max-width:960px;font-weight:900}
+h1 .red{color:#ff443b}.sub{position:relative;z-index:1;max-width:720px;margin:0 auto 26px;color:#bcbcbc;font-size:17px;line-height:1.6}
+.btn{display:inline-flex;position:relative;z-index:2;align-items:center;justify-content:center;background:linear-gradient(#ff5146,#d91d18);border:1px solid #ff7068;border-radius:7px;min-height:58px;padding:0 30px;color:#fff;font-weight:900;text-transform:uppercase;font-size:15px;box-shadow:0 12px 35px rgba(255,49,39,.22);transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}
+.stock{margin-top:16px;color:#aaa;font-size:12px}.stock strong{color:#fff;font-size:15px}.bar{height:6px;max-width:430px;margin:9px auto 0;background:#292929;border-radius:20px;overflow:hidden}.bar i{display:block;width:100%;height:100%;background:linear-gradient(90deg,#ff2d25,#ff655d);border-radius:20px}
+.hero-art{position:relative;z-index:1;width:min(760px,100%);height:250px;margin:32px auto 0;border-radius:18px;background:radial-gradient(circle at 50% 20%,#44201c,#15100f 45%,#080808 75%);border:1px solid #292929;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-art:before,.hero-art:after{content:"";position:absolute;width:180px;height:280px;border-radius:50%;background:linear-gradient(145deg,#252525,#070707);bottom:-80px}.hero-art:before{left:19%;transform:rotate(13deg)}.hero-art:after{right:19%;transform:rotate(-13deg)}
+.hero-art .screen{position:relative;z-index:2;width:250px;height:145px;border:1px solid #555;border-radius:12px;background:#080808;box-shadow:0 25px 60px #000;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:22px}.screen em{color:#ff493f;font-style:normal}
+section{padding:74px 0}.dark{background:#080808}.alt{background:#0c0c0c}
+.kicker{font-size:11px;color:#ff625a;font-weight:900;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:10px}h2{font-size:clamp(31px,4.5vw,50px);line-height:1.04;letter-spacing:-2.2px;margin:0 0 18px;font-weight:900}p{color:#aaa;font-size:16px;line-height:1.7}
+.proof-intro{max-width:800px}.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}.check{border:1px solid #292929;background:#111;border-radius:11px;padding:19px}.check b{display:block;font-size:14px}.check b:before{content:"✓";color:#55df88;margin-right:8px}.check span{display:block;color:#777;font-size:12px;margin-top:5px}
+.proofs{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:20px}.proof-img{height:410px;border:1px solid #303030;border-radius:13px;background:linear-gradient(145deg,#181818,#0a0a0a);display:flex;align-items:center;justify-content:center;text-align:center;color:#666;font-size:12px;overflow:hidden}.proof-img strong{color:#ddd;font-size:25px}.proof-img strong em{color:#ff4c42;font-style:normal}
+.offer-section{padding:70px 0;background:linear-gradient(180deg,#070707,#0e0706,#070707)}.offer{width:min(650px,100%);margin:auto;background:linear-gradient(160deg,#191919,#0d0d0d);border:1px solid #3b3b3b;border-radius:16px;padding:30px;box-shadow:0 30px 80px rgba(0,0,0,.55);text-align:center}.offer-tag{color:#ff6b62;font-weight:900;text-transform:uppercase;font-size:11px;letter-spacing:1.4px}.offer h3{font-size:31px;margin:9px 0}.offer-date{font-size:13px;color:#ddd}.offer hr{border:0;border-top:1px solid #292929;margin:22px 0}.offer ul{text-align:left;list-style:none;padding:0;margin:0}.offer li{padding:8px 0;color:#ddd;font-size:13px}.offer li:before{content:"✓";color:#4ade80;font-weight:900;margin-right:10px}.old{color:#777;text-decoration:line-through;margin-top:20px}.price{font-size:64px;line-height:1;font-weight:900;letter-spacing:-3px}.install{color:#999;font-size:12px;margin:6px 0 22px}.offer-note{color:#777;font-size:11px;margin:14px 0 0}
+.problem-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}.problem-list{list-style:none;padding:0}.problem-list li{padding:10px 0;color:#ddd}.problem-list li:before{content:"✔";color:#ff554b;margin-right:10px}.problem-art{min-height:410px;border:1px solid #292929;border-radius:17px;background:radial-gradient(circle at 55% 35%,#2a1a18,#111 50%,#080808);display:flex;align-items:center;justify-content:center;padding:25px}.problem-art .person{width:210px;height:300px;border-radius:110px 110px 18px 18px;background:linear-gradient(135deg,#343434,#0b0b0b);position:relative}.problem-art .bubble{position:absolute;top:25px;right:-110px;background:#151515;border:1px solid #393939;border-radius:10px;padding:13px;font-size:11px;color:#999}.problem-art .bubble b{color:#ff5c52}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.bullet-box{border-top:1px solid #292929}.bullet{padding:16px 0;border-bottom:1px solid #292929;color:#ddd}.bullet:before{content:"✦";color:#ff5b52;margin-right:10px}.quote{border:1px solid #2a2a2a;background:#101010;border-radius:14px;padding:28px}.quote strong{font-size:24px;line-height:1.15;display:block}.quote em{font-style:normal;color:#ff5046}
+.delivery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.delivery .item{padding:21px;border:1px solid #292929;background:#101010;border-radius:12px}.delivery b{font-size:14px}.delivery p{font-size:13px;margin:6px 0 0}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}.bio{border:1px solid #292929;background:#101010;border-radius:15px;overflow:hidden}.bio-img{height:270px;background:linear-gradient(145deg,#303030,#0b0b0b);display:flex;align-items:flex-end;justify-content:center;color:#777;font-size:11px;padding-bottom:15px}.bio-body{padding:22px}.bio h3{margin:0;font-size:25px}.bio p{font-size:13px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}.gallery .g{aspect-ratio:1/1.15;border-radius:12px;border:1px solid #292929;background:linear-gradient(135deg,#252525,#0d0d0d);display:flex;align-items:center;justify-content:center;color:#666;font-size:10px;text-align:center;padding:12px}
+.audience{margin-top:28px;border:1px solid #292929;background:#101010;border-radius:15px;padding:25px}.audience ul{columns:2;list-style:none;padding:0;margin:0}.audience li{padding:9px 0;color:#ddd;font-size:13px}.audience li:before{content:"✓";color:#55df88;margin-right:8px}
+.final{padding-bottom:55px}.support{margin:28px auto;max-width:760px;text-align:center;border-top:1px solid #292929;border-bottom:1px solid #292929;padding:28px 0}.wa{display:inline-flex;margin-top:8px;border:1px solid #2f9e63;color:#6ee7a2;padding:12px 18px;border-radius:7px;font-weight:800;font-size:13px}
+.faq{max-width:850px;margin:0 auto}.faq details{border-bottom:1px solid #292929;padding:19px 0}.faq summary{cursor:pointer;font-weight:800;font-size:15px}.faq p{margin:12px 0 0;font-size:13px}
+.footer{text-align:center;padding:35px 20px;color:#666;font-size:11px;border-top:1px solid #222}.footer a{color:#888}
+.sticky{display:none}
+@media(max-width:760px){
+ .wrap{width:min(var(--max),calc(100% - 24px))}.timer{transform:scale(.9);margin-left:-10px;margin-right:-10px}h1{letter-spacing:-2.3px}.sub{font-size:15px}.hero{padding-bottom:48px}
+ .checks,.proofs,.problem-grid,.two-col,.delivery,.people{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.audience ul{columns:1fr}
+ section{padding:54px 0}.hero-art{height:190px}.offer{padding:24px 18px}.price{font-size:55px}
+ .sticky{position:fixed;display:flex;z-index:50;left:10px;right:10px;bottom:10px;width:auto;min-height:53px;font-size:13px}.footer{padding-bottom:90px}
+}
+
+/* ===== HERO UNIFICADO: DESKTOP = MOBILE ===== */
+.mobile-top{min-height:64px;background:#111720;border-bottom:1px solid #29303b;display:flex;align-items:center;justify-content:center;gap:18px;padding:6px 18px}
+.top-badge{height:31px;border:1px solid #d86b00;border-radius:18px;padding:0 12px;display:flex;align-items:center;gap:6px;color:#f4f4f4;font-size:11px;white-space:nowrap}
+.mobile-top .timer{display:flex;gap:6px;margin:0}
+.mobile-top .time{min-width:42px;height:50px;padding:5px 4px;border:1px solid #303947;border-radius:8px;background:#18202b;font-size:15px;text-align:center}
+.mobile-top .time small{font-size:8px;color:#9aa3b1;letter-spacing:.8px}
+.hero{padding:10px 0 42px;background:linear-gradient(180deg,#10151d 0%,#070b11 38%,#080b10 100%);overflow:hidden;text-align:left}
+.hero:after{width:700px;height:450px;top:70px;background:radial-gradient(circle,rgba(255,94,0,.12),transparent 65%);filter:blur(25px)}
+.hero .wrap{position:relative;z-index:1}
+.brand{text-align:center;margin:0 0 7px;line-height:.88;letter-spacing:-1.5px;text-transform:none}
+.brand span{display:block;color:#ff6a00;font-size:20px;letter-spacing:-.7px}
+.brand strong{display:block;color:#f0f2f5;font-size:39px;font-weight:900;letter-spacing:-3px;text-transform:lowercase}
+.hero-art{position:relative;z-index:1;width:100%;aspect-ratio:533/384;height:auto;margin:0 auto;background:#080c12;border:0;border-radius:0;overflow:hidden;display:block}
+.hero-banner{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+.hero-pills{display:flex;gap:6px;justify-content:center;margin:-2px 0 17px;position:relative;z-index:2;flex-wrap:wrap}
+.hero-pills div{border:1px solid #56606d;border-radius:14px;padding:6px 9px;color:#e7e9ed;font-size:8px;white-space:nowrap;background:#0d131b}
+.hero-pills div:first-letter{color:#ff6a00}
+.hero h1{position:relative;z-index:1;font-size:21px;line-height:1.15;letter-spacing:-.65px;margin:0 0 13px;text-align:left}
+.hero .sub{position:relative;z-index:1;font-size:14px;line-height:1.55;margin:0 0 17px;text-align:left;color:#d2d5da;max-width:none}
+.hero-btn{width:100%;min-height:49px;border-radius:28px;background:linear-gradient(90deg,#ff7300,#ff5c00);border:0;color:#080808;font-size:13px;box-shadow:0 14px 35px rgba(255,91,0,.22)}
+.stock-card{margin-top:24px;padding:17px 22px 13px;border:1px solid #354050;border-radius:13px;background:linear-gradient(145deg,#1a222e,#151d28);display:grid;grid-template-columns:auto 1fr;column-gap:13px;align-items:center}
+.stock-main{display:flex;flex-direction:column;line-height:.85}.stock-main strong{font-size:29px;color:#f3f4f6}.stock-main span{font-size:8px;color:#9da6b2;letter-spacing:1px;margin-top:5px}
+.stock-copy{font-size:11px;color:#aeb5bf;line-height:1.2}.stock-copy b{color:#e8eaed}
+.stock-card .bar{grid-column:1/-1;width:100%;height:3px;margin:12px 0 0;background:#4b4a49;max-width:none}.stock-card .bar i{background:#ff7200;box-shadow:0 0 10px rgba(255,112,0,.65)}
+.sticky{display:none!important}
+@media(min-width:761px){
+ .wrap{width:min(760px,calc(100% - 34px))}
+ .mobile-top{min-height:64px}
+ .hero{padding:10px 0 60px}
+ .brand{margin-bottom:10px}.brand span{font-size:24px}.brand strong{font-size:56px;letter-spacing:-4px}
+ .hero-art{width:100%;aspect-ratio:533/384}
+ .hero-pills{margin-top:-2px;margin-bottom:20px}.hero-pills div{font-size:10px;padding:7px 12px}
+ .hero h1{font-size:clamp(24px,3.1vw,34px);letter-spacing:-1.15px;line-height:1.13}
+ .hero .sub{font-size:16px;line-height:1.55}.hero-btn{font-size:14px}
+}
+@media(max-width:560px){.mobile-top{gap:9px;padding-left:10px;padding-right:10px}.top-badge{font-size:9px;padding:0 8px}.mobile-top .time{min-width:39px}}
+@media(max-width:380px){.mobile-top .time{min-width:37px}.hero-pills div{font-size:7px;padding-left:7px;padding-right:7px}}
+.delivery .item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.item-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9d00ff;
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.delivery .item b,
+.delivery .item p {
+  display: block;
+}
+
+.proof-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-631804406"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-631804406');
+</script>
+
+<!-- Event snippet for Iniciar finalização de compra conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-631804406/N6yiCJ_hkeYcEPajoq0C',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
+</head>
+<body>
+
+<div class="mobile-top"><div class="top-badge">▣ <b>ACESSO IMEDIATO</b></div><div class="timer"><small>Comece sua jornada na hipnoterapia com mais clareza e direção.</small></div></div>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="brand"><span>GUIA DO</span><strong>hipnoterapeuta iniciante</strong></div>
+<div style="padding:75% 0 0 0;position:relative;">
+  <iframe
+    src="SUBSTITUA_PELO_VIDEO_OU_IMAGEM_DO_GUIA"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;"
+    title="Guia do Hipnoterapeuta Iniciante">
+  </iframe>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+  <div class="hero-pills">
+   <div>▣ <b>Curso 100% online</b></div>
+   <div>◷ <b>Acesso imediato</b></div>
+   <div>▣ <b>31 conteúdos</b></div>
+   <div>► <b>Conteúdo introdutório</b></div>
+  </div>
+  <h1>Quer começar na hipnoterapia, mas não sabe <span class="red">por onde começar?</span></h1>
+    <p class="sub">Um guia introdutório para organizar seus primeiros passos, entender melhor a prática do hipnoterapeuta e começar seus estudos com mais segurança e direção.</p><a class="btn hero-btn" href="#oferta">QUERO COMEÇAR AGORA</a><br><br>
+ 
+ <!-- SEÇÃO: VEJA O QUE VOCÊ VAI APRENDER -->
+<section class="what-you-learn">
+  <div class="wrap">
+
+    <div class="learn-header">
+      <span class="learn-kicker">DENTRO DO GUIA</span>
+      <h2>Comece entendendo os fundamentos da hipnoterapia</h2>
+      <p>
+        Um conteúdo introdutório para ajudar você a conhecer melhor a área e compreender os primeiros passos da jornada de um hipnoterapeuta.
+      </p>
+    </div>
+
+    <div class="learn-grid">
+       <div class="learn-card">
+         <div class="learn-icon">🧠</div>
+         <h3>Fundamentos da hipnose</h3>
+         <p>Conheça conceitos essenciais para começar seus estudos com uma base mais clara.</p>
+       </div>
+       <div class="learn-card">
+         <div class="learn-icon">👥</div>
+         <h3>O papel do hipnoterapeuta</h3>
+         <p>Entenda melhor a atuação profissional e o que considerar ao iniciar nessa área.</p>
+       </div>
+       <div class="learn-card">
+         <div class="learn-icon">📘</div>
+         <h3>Conhecimento introdutório</h3>
+         <p>Construa uma visão inicial dos conceitos envolvidos na hipnoterapia.</p>
+       </div>
+       <div class="learn-card">
+         <div class="learn-icon">🧭</div>
+         <h3>Primeiros passos</h3>
+         <p>Tenha mais clareza sobre como começar a estudar e desenvolver suas habilidades.</p>
+       </div>
+       <div class="learn-card">
+         <div class="learn-icon">🗂️</div>
+         <h3>Organização dos estudos</h3>
+         <p>Saiba como estruturar seu início de aprendizado sem tentar aprender tudo de uma vez.</p>
+       </div>
+       <div class="learn-card">
+         <div class="learn-icon">🔎</div>
+         <h3>Uma visão da profissão</h3>
+         <p>Conheça melhor a área da hipnoterapia e os próximos passos possíveis para sua formação.</p>
+       </div>
+     </div>
+
+     <div class="learn-bottom">
+      <strong>E isso é apenas o começo.</strong>
+      <span>
+        Você vai encontrar muito mais técnicas, demonstrações e aulas práticas dentro do curso.
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.what-you-learn{
+  padding:45px 0 35px;
+  background:#fff;
+}
+
+.learn-header{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 30px;
+}
+
+.learn-kicker{
+  display:inline-block;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  color:#d71920;
+  margin-bottom:8px;
+}
+
+.learn-header h2{
+  margin:0 0 10px;
+  font-size:32px;
+  line-height:1.1;
+  font-weight:900;
+  color:#111;
+}
+
+.learn-header p{
+  margin:0;
+  font-size:16px;
+  line-height:1.5;
+  color:#666;
+}
+
+.learn-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  max-width:760px;
+  margin:0 auto;
+}
+
+.learn-card{
+  background:#f8f8f8;
+  border:1px solid #e8e8e8;
+  border-radius:14px;
+  padding:20px 15px 17px;
+  text-align:center;
+  box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+.learn-icon{
+  width:62px;
+  height:62px;
+  margin:0 auto 12px;
+  border-radius:50%;
+  background:#fff;
+  border:2px solid #d71920;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:29px;
+  box-shadow:0 4px 12px rgba(215,25,32,.12);
+}
+
+.learn-card h3{
+  margin:0 0 6px;
+  font-size:17px;
+  line-height:1.2;
+  color:#111;
+}
+
+.learn-card p{
+  margin:0;
+  font-size:13px;
+  line-height:1.4;
+  color:#666;
+}
+
+.learn-bottom{
+  max-width:650px;
+  margin:28px auto 0;
+  padding:18px;
+  text-align:center;
+  border-radius:12px;
+  background:#f8f8f8;
+  border:1px solid #ededed;
+}
+
+.learn-bottom strong{
+  display:block;
+  font-size:16px;
+  color:#111;
+  margin-bottom:5px;
+}
+
+.learn-bottom span{
+  display:block;
+  font-size:13px;
+  color:#777;
+}
+
+@media(max-width:600px){
+  .what-you-learn{
+    padding:38px 0 28px;
+  }
+
+  .learn-header{
+    margin-bottom:22px;
+  }
+
+  .learn-header h2{
+    font-size:27px;
+  }
+
+  .learn-header p{
+    font-size:15px;
+    padding:0 8px;
+  }
+
+  .learn-grid{
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .learn-card{
+    padding:16px 9px 14px;
+    border-radius:11px;
+  }
+
+  .learn-icon{
+    width:52px;
+    height:52px;
+    font-size:24px;
+    margin-bottom:9px;
+  }
+
+  .learn-card h3{
+    font-size:14px;
+    margin-bottom:5px;
+  }
+
+  .learn-card p{
+    font-size:11px;
+    line-height:1.35;
+  }
+
+  .learn-bottom{
+    margin-top:22px;
+    padding:15px 12px;
+  }
+
+  .learn-bottom strong{
+    font-size:14px;
+  }
+
+  .learn-bottom span{
+    font-size:12px;
+  }
+}
+</style>
+ 
+    <div class="stock-card">
+   <div class="stock-main"><strong>Certificação</strong><span>Inclusa</span></div>
+   <div class="stock-copy"><b>Certificação de hipnólogo</b><br> após conclusão do curso</div>
+   <div class="bar"><i style="width:100%"></i></div>
+  </div>
+ </div>
+</header>
+
+<section class="dark">
+  <div class="wrap">
+   <div class="kicker">● SEU PONTO DE PARTIDA</div>
+   <h2>Você não precisa ter tudo decidido para dar o primeiro passo.</h2>
+   <p class="proof-intro">O Guia do Hipnoterapeuta Iniciante é uma introdução para quem quer conhecer melhor a hipnoterapia, entender os fundamentos da área e ter mais clareza sobre como continuar aprendendo.</p>
+   <div class="checks">
+    <div class="check"><b>Conteúdo introdutório</b><span>Uma visão inicial da área</span></div>
+    <div class="check"><b>Estude no seu ritmo</b><span>Organize seus horários</span></div>
+    <div class="check"><b>Primeiros passos</b><span>Mais clareza para começar</span></div>
+   </div>
+   <p>O Guia reúne 31 conteúdos, com aproximadamente 5h44 de duração, para você estudar no seu ritmo e construir uma visão inicial da hipnoterapia.</p>
+   <div class="proofs">
+    <div class="proof-img" style="background-image:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),url('/lpaprendahipnosedozero/banner1.jpg');"><strong>GUIA<br>PARA INICIANTES</strong></div>
+    <div class="proof-img" style="background-image:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),url('/lpaprendahipnosedozero/banner2.jpg');"><strong>SEUS PRIMEIROS PASSOS<br>NA HIPNOTERAPIA</strong></div>
+   </div>
+   <p style="text-align:center;margin:25px auto 0;max-width:700px">Um ponto de partida para conhecer melhor a área e organizar seus próximos passos.<br><b style="color:#fff">Comece sua jornada na hipnoterapia.</b></p>
+  </div>
+</section>
+
+<section class="offer-section" id="oferta">
+  <div class="wrap">
+   <div class="offer">
+    <div class="offer-tag">✦ GUIA INTRODUTÓRIO · ACESSO ONLINE</div>
+    <h3>Guia do Hipnoterapeuta Iniciante</h3>
+    <div class="offer-date">31 conteúdos · Aproximadamente 5h44 · Estude no seu ritmo</div>
+    <hr>
+    <ul>
+     <li>Guia do Hipnoterapeuta Iniciante com 31 conteúdos</li>
+     <li>Aproximadamente 5h44 de conteúdo para estudar online</li>
+     <li>Introdução aos fundamentos da hipnoterapia</li>
+     <li>Conteúdo organizado para quem está começando</li>
+     <li>Estude no seu ritmo, de acordo com sua rotina</li>
+    </ul>
+    <div class="old">De R$ 99,00 por apenas</div><div class="price">R$ 39,00</div><div class="install">Pagamento único · confira as condições no checkout</div>
+    <a class="btn" href="COLE_AQUI_O_LINK_DO_CHECKOUT_DO_GUIA" onclick="return gtag_report_conversion(this.href);">QUERO ACESSAR O GUIA POR R$ 39</a>
+    <div class="offer-note">Oferta de acesso ao Guia do Hipnoterapeuta Iniciante.</div>
+   </div>
+  </div>
+</section>
+
+
+<section class="alt">
+   <div class="wrap">
+     <div class="kicker">● O QUE VOCÊ RECEBE</div>
+     <h2>Seu ponto de partida na hipnoterapia</h2>
+     <div class="delivery">
+       <div class="item"><span class="item-icon">🎥</span><div><b>01 · 31 conteúdos online</b><p>Aproximadamente 5h44 de conteúdo introdutório.</p></div></div>
+       <div class="item"><span class="item-icon">📚</span><div><b>02 · Aprendizado no seu ritmo</b><p>Organize seus estudos de acordo com sua rotina.</p></div></div>
+       <div class="item"><span class="item-icon">🧭</span><div><b>03 · Uma visão inicial da profissão</b><p>Conheça melhor a área antes de avançar na formação.</p></div></div>
+       <div class="item"><span class="item-icon">✨</span><div><b>04 · Um primeiro passo acessível</b><p>Comece seus estudos por R$ 39,00.</p></div></div>
+     </div>
+     <div style="text-align:center;margin-top:28px"><a class="btn" href="#oferta">QUERO COMEÇAR PELO GUIA</a></div>
+   </div>
+</section>
+
+<section class="dark">
+ <div class="wrap">
+  <div class="kicker">QUEM PREPAROU O CONTEÚDO</div><h2>Aprenda com quem ensina hipnose há mais de uma década</h2>
+  <div class="people">
+   <article class="bio"><div class=""><img src="/lpaprendahipnosedozero/Jheyson_Jaleco_IA.jpg"></div><div class="bio-body"><h3>Jheyson Marcilio</h3><p>Hipnoterapeuta e professor de hipnose há mais de 10 anos, com mais de 100 mil inscritos no YouTube.</p><p>Já formou presencialmente e online mais de 10 mil alunos em todo o mundo.</p></div></article>
+  </div>
+  <div class="audience"><h3>O Guia do Hipnoterapeuta Iniciante é para você que:</h3><ul><li>Tem interesse em começar a estudar hipnoterapia</li><li>Está em dúvida sobre os primeiros passos na área</li><li>Quer conhecer melhor o trabalho do hipnoterapeuta</li><li>Busca uma introdução antes de avançar para formações mais completas</li></ul></div>
+ </div>
+</section>
+
+<section class="final">
+  <div class="support"><b>Dúvidas?</b><p>Converse com a minha equipe pelo nosso WhatsApp oficial.</p><a class="wa" href="https://wa.me/5548996528969">Quero falar com a equipe</a><p style="font-size:11px">Meu time nunca vai te pedir senha, código ou PIX.</p></div>
+  <div class="faq"><h2>Perguntas Frequentes</h2>
+   <details open><summary>O Guia é para quem está começando?</summary><p>Sim. Ele foi pensado como uma introdução para quem quer conhecer melhor a hipnoterapia e dar os primeiros passos nos estudos.</p></details>
+   <details><summary>O Guia substitui uma formação completa?</summary><p>Não. O Guia é um conteúdo introdutório e não deve ser apresentado como substituto de uma formação profissional completa.</p></details>
+   <details><summary>Quanto tempo dura o conteúdo?</summary><p>O Guia reúne aproximadamente 5h44 de conteúdo, dividido em 31 itens. Confira no checkout as condições específicas de acesso.</p></details>
+    <details><summary>Quanto custa?</summary><p>Nesta oferta, o valor é de R$ 39,00, em vez de R$ 99,00.</p></details>
+     </div>
+  <div style="margin-top:35px"><a class="btn" href="COLE_AQUI_O_LINK_DO_CHECKOUT_DO_GUIA" onclick="return gtag_report_conversion(this.href);">QUERO ACESSAR O GUIA POR R$ 39</a></div>
+ </div>
+</section>
+
+
+
+<footer class="footer">Copyright ©2026 Comunidade Marcilio · <a href="#">Políticas de Privacidade</a> · <a href="#">Políticas de Cookies</a> · <a href="#">Termos de Serviço</a></footer>
+
+<script>
+const target=new Date('2099-12-31T23:59:59-03:00').getTime();
+function tick(){let x=Math.max(0,target-Date.now());let d=Math.floor(x/86400000);x%=86400000;let h=Math.floor(x/3600000);x%=3600000;let m=Math.floor(x/60000);let s=Math.floor(x/1000);document.querySelector('#d').textContent=String(d).padStart(2,'0');document.querySelector('#h').textContent=String(h).padStart(2,'0');document.querySelector('#m').textContent=String(m).padStart(2,'0');document.querySelector('#s').textContent=String(s).padStart(2,'0')}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
